@@ -17,10 +17,16 @@
       </div>
       <div class="navbar">
         <ul class="nav-lists">
-          <li class="nav-lists__list"><a href="service.html">新規登録</a></li>
-          <li class="nav-lists__list"><a href="news.html">ログイン</a></li>
-          <li class="nav-lists__list"><a href="contact.html">新規投稿</a></li>
-        </ul> 
+          <%# <% if user_signed_in? %>
+            <%# <li><%= link_to current_user.nickname, "#", class: "nav-lists__list" %></li>
+            <%# <li><%= link_to 'ログアウト', "#", class: "nav-lists__list" %></li>
+            <%# <li><%= link_to '新規投稿', "#", class: "nav-lists__list" %></li>
+          <%# <% else %> 
+            <li><%= link_to '新規登録', "#", class: "nav-lists__list" %></li>
+            <li><%= link_to 'ログイン', "#", class: "nav-lists__list" %></li>
+            <li><%= link_to '新規投稿', "#", class: "nav-lists__list" %></li>
+          <%# <% end %>
+        </ul>  
       </div>
     </header>
 
