@@ -18,6 +18,7 @@
   font-size: 45px;
   font-weight: 600;
   line-height: 100px;
+  /* font-family: "Noto Sans JP";  */
 }
 
 .nav-lists {
@@ -30,6 +31,7 @@
   font-size: 22px;
   font-weight: 600px;
   line-height: 100px;
+  /* font-family: "Noto Sans JP"; */
 }
 
 /*フッター*/
@@ -79,7 +81,8 @@
   text-align: center;
   margin-top: 50px;
   color: #622f03d4;
-  text-shadow:1px 1px#eb609f
+  text-shadow:1px 1px#eb609f;
+  /* font-family: "Noto Sans JP"; */
   
 }
 
@@ -137,6 +140,12 @@
   margin-top: 30px;
   font-size: 25px;
   list-style: none;
+  /* font-family: "Noto Sans JP"; */
   
+}
+
+/* 文字フォント指定 */
+.logo, .nav-lists__list, .page-title, .rec-tab{
+  font-family: "Noto Sans JP";
 }
 
