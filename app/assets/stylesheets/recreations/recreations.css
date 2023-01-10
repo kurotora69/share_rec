@@ -99,42 +99,30 @@
 
 /*投稿されたレクリエーションの表示*/
 
-.service-img{
+.new-recreations{
   display: flex;
   justify-content: space-between;
   margin: 100px 100px 0;
 }
 
-.service-text{
-  height: 420px;
-  width: 350px;
+.rec-lists{
+  height: 4px;
+  width: 300px;
 }
 
-.images{
-  height: 275px;
-  width: 350px;
-  border-radius: 5px 5px 0 0;
-  object-fit: cover;
-} 
 
-.text{
-  height: 120px;
-  width: 350px;
-  padding: 20px;
-  background-color: #f4fa7f;
-  border-radius: 0 0 5px 5px;
-
-}
-.service-main{
+.title{
   font-size: 25px;
   font-weight: 600;
 }
 
-.service-sub{
+.explanation{
   font-size: 14px;
   padding-top: 20px;
   line-height: 17px
 }
+
+
 
 /* サイドバー */
 .side-bar{

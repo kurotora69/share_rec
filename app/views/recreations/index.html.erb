@@ -39,37 +39,26 @@
           <div class = "page-title" >
             <div class = "page-title__main">一緒にレクリエーションの可能性を広げよう！</div>
             <div class = "page-title__sub">Let's シェアレク♩</div>
-          </div>
+          </div>      
 
-          <div class = "service-img">
-            <div class = "service-text">
-              <img src = "image/design.jpg" class = "images">
-              <div class = "text">
-                <div class = "rec-title">タイトル</div>
-                <div class = "service-sub">
-                  レクリエーションの詳細など
+          <!--レクリエーション一覧(仮)-->
+          <ul class = "new-recreations">
+            <%# <% @recreations.each do |recreation| %>
+              <li class = "rec-lists">
+                <%# <%= link_to '#', do %>
+                <div class = "rec-info">
+                  <%# <%= img_tag recreation.image.vriant(resize: '200x300'), class = ""> %>
+                  <div class = "title">
+                    <%# <%= recreation.title %>
+                  </div>
+                  <div class = "explanation">
+                    <%# <%= recreation.explanation %>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class = "service-text">
-              <img src = "image/development.jpg" class = "images">
-              <div class = "text">
-                <div class = "service-main">タイトル</div>
-                <div class = "service-sub">
-                  レクリエーションの詳細など
-                </div>
-              </div>  
-            </div>   
-            <div class = "service-text">
-              <img src = "image/marketing.jpg" class = "images">
-              <div class = "text">
-                <div class = "service-main">タイトル</div>
-                <div class = "service-sub">
-                  レクリエーションの詳細など
-                </div>
-              </div>  
-            </div>
-          </div>
+              </li>    
+            <%# <% end %>
+            
+          </ul>
         </div>  
       </div>
        
