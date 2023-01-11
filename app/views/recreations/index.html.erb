@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>シェアレク</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <!-- ヘッダー -->
+  <body>
+    <header class="header">
+      <div class="heading">
+
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+        <h1 class="logo"><a href="index.html">シェアレク</a></h1>
+      </div>
+      <div class="navbar">
+        <ul class="nav-lists">
+          <%# <% if user_signed_in? %>
+            <%# <li><%= link_to current_user.nickname, "#", class: "nav-lists__list" %></li>
+            <%# <li><%= link_to 'ログアウト', "#", class: "nav-lists__list" %></li>
+            <%# <li><%= link_to '新規投稿', "#", class: "nav-lists__list" %></li>
+          <%# <% else %> 
+            <li><%= link_to '新規登録', "#", class: "nav-lists__list" %></li>
+            <li><%= link_to 'ログイン', "#", class: "nav-lists__list" %></li>
+            <li><%= link_to '新規投稿', "#", class: "nav-lists__list" %></li>
+          <%# <% end %>
+        </ul>  
+      </div>
+    </header>
+
+    <!--サービスメイン-->
+    <div class = "main">
+      <div class = "side-bar">
+        <div class = "tab-list">
+          <li class = "rec-tab">運動</li>
+          <li class = "rec-tab">創作</li>
+          <li class = "rec-tab">年間行事</li>
+          <li class = "rec-tab">脳トレ</li>
+          <li class = "rec-tab">その他</li>
+        </div>
+      </div>
+      <div class = top-main>
+        <%= image_tag "top-image.jpg", size: '1250x700', class:"top-image" %>
+        <div class = "new-rec">
+          <div class = "page-title" >
+            <div class = "page-title__main">一緒にレクリエーションの可能性を広げよう！</div>
+            <div class = "page-title__sub">Let's シェアレク♩</div>
+          </div>      
+
+          <!--レクリエーション一覧(仮)-->
+          <ul class = "new-recreations">
+            <%# <% @recreations.each do |recreation| %>
+              <li class = "rec-lists">
+                <%# <%= link_to '#', do %>
+                <div class = "rec-info">
+                  <%# <%= img_tag recreation.image.vriant(resize: '200x300'), class = ""> %>
+                  <div class = "title">
+                    <%# <%= recreation.title %>
+                  </div>
+                  <div class = "explanation">
+                    <%# <%= recreation.explanation %>
+                  </div>
+                </div>
+              </li>    
+            <%# <% end %>
+            
+          </ul>
+        </div>  
+      </div>
+       
+    </div>   
+    
+    
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="copyright">Copyright@2023</div>
+    </footer>
+  </body>
+</html> 

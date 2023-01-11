@@ -1,0 +1,151 @@
+/*ヘッダー*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1450px;
+  padding: 0 100px 0 30px;
+  background-color: #eaf60aa8;
+}
+
+.header a {
+  text-decoration: none;
+  color: #622f03d4;
+  text-shadow:1px 1px#eb609f
+}
+
+.logo {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 100px;
+  /* font-family: "Noto Sans JP";  */
+}
+
+.nav-lists {
+  height: 100px;
+  display: flex;
+}
+
+.nav-lists__list {
+  margin-left: 70px;
+  font-size: 22px;
+  font-weight: 600px;
+  line-height: 100px;
+  /* font-family: "Noto Sans JP"; */
+}
+
+/*フッター*/
+
+.footer{
+  background-color: #eaf60aa8;
+  height: 70px;
+  width: 1450px;
+}
+
+.copyright{
+  line-height: 70px;
+  text-align: center;
+  font-size: 16px;
+  color: #040404;
+}
+
+
+/*トップページ*/
+
+.main{
+  display: flex;
+  position: relative;
+  width: 1450px;
+  height: 700px;
+}
+
+.top-main{
+  width: 1250px
+}
+
+.new-rec{
+  position: absolute;
+  top: 0;
+}
+
+.top-images {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 50%;
+}
+
+
+.page-title{
+  width: 1100px;
+  text-align: center;
+  margin-top: 50px;
+  color: #622f03d4;
+  text-shadow:1px 1px#eb609f;
+  /* font-family: "Noto Sans JP"; */
+  
+}
+
+
+.page-title__main{
+  font-size: 40px;
+  font-weight: 600;
+  
+}
+
+.page-title__sub{
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 20px;
+
+}
+
+/*投稿されたレクリエーションの表示*/
+
+.new-recreations{
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 100px 0;
+}
+
+.rec-lists{
+  height: 4px;
+  width: 300px;
+}
+
+
+.title{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.explanation{
+  font-size: 14px;
+  padding-top: 20px;
+  line-height: 17px
+}
+
+
+
+/* サイドバー */
+.side-bar{
+  width: 200px;
+  background-color: #fb9bcaa7;
+  color: #462201d4;
+  text-shadow:1px 1px#f3fc7c
+}
+
+.rec-tab{
+  padding: 30px 30px 30px 50px;
+  margin-top: 30px;
+  font-size: 25px;
+  list-style: none;
+  /* font-family: "Noto Sans JP"; */
+  
+}
+
+/* 文字フォント指定 */
+.logo, .nav-lists__list, .page-title, .rec-tab{
+  font-family: "Noto Sans JP";
+}
+
