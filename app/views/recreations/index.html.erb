@@ -8,28 +8,9 @@
   </head>
 
   <!-- ヘッダー -->
+ <%= render "devise/shared/header" %>
+
   <body>
-    <header class="header">
-      <div class="heading">
-
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-        <h1 class="logo"><a href="index.html">シェアレク</a></h1>
-      </div>
-      <div class="navbar">
-        <ul class="nav-lists">
-          <%# <% if user_signed_in? %>
-            <%# <li><%= link_to current_user.nickname, "#", class: "nav-lists__list" %></li>
-            <%# <li><%= link_to 'ログアウト', "#", class: "nav-lists__list" %></li>
-            <%# <li><%= link_to '新規投稿', "#", class: "nav-lists__list" %></li>
-          <%# <% else %> 
-            <li><%= link_to '新規登録', "#", class: "nav-lists__list" %></li>
-            <li><%= link_to 'ログイン', "#", class: "nav-lists__list" %></li>
-            <li><%= link_to '新規投稿', "#", class: "nav-lists__list" %></li>
-          <%# <% end %>
-        </ul>  
-      </div>
-    </header>
-
     <!--サービスメイン-->
     <div class = "main">
       <div class = "side-bar">
@@ -69,13 +50,9 @@
           </ul>
         </div>  
       </div>
-       
     </div>   
     
-    
     <!-- フッター -->
-    <footer class="footer">
-      <div class="copyright">Copyright@2023</div>
-    </footer>
+    <%= render "devise/shared/footer" %>
   </body>
 </html> 
