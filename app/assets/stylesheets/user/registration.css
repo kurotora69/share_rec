@@ -5,12 +5,14 @@
   background-color: #f9eb71;
   display: flex;
   justify-content: center;
+ 
 }
 
 .form-wrap {
   width: 75%;
   background-color: white;
   padding-bottom: 70px;
+  border: 20px solid #f9eb71;
 }
 
 .form-header {
