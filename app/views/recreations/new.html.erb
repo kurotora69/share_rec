@@ -1,0 +1,76 @@
+<%= form_with model: @recreation, url: user_registration_path, class: 'recreation-post', local: true do |f| %>
+  
+<div class='rec-form-main'>
+  <div class='form-header'>
+    <h1 class='form-header-text'>
+      レクリエーション新規投稿
+    </h1>
+  </div>
+
+  <%= render "devise/shared/error_messages", model: f.object %>
+
+  <div class="rec-form">
+    <div class='rec-form-text'>
+      <label class="rec-form-text">レクリエーションのジャンル</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :genre_tag, class:"input-default", id:"nickname", placeholder:"例) 運動", maxlength:"40" %>
+  </div>
+  <div class="rec-form">
+    <div class='rec-form-text'>
+      <label class="rec-form-text">レクリエーションタイトル</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :title, class:"input-default", id:"title", placeholder:"例)風船バレー", maxlength:"40" %>
+  </div>
+  <div class="rec-form">
+    <div class='rec-form-text'>
+      <label class="rec-form-text">レクリエーション説明</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.email_field :explanation, class:"input-default", id:"explanation", placeholder:"例)椅子に座った状態で、手を使い風船をトスしあうゲーム、※注意点、アレンジなどもあればご記入をお願いします", autofocus: true %>
+  </div>
+  <div class="rec-form">
+    <div class='rec-form-text'>
+      <label class="rec-form-text">必要な道具</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.password_field :posture, class:"input-default", id:"posture", placeholder:"例)風船" %>
+    <p class='info-text'>※英字と数字の両方を含めて設定してください</p>
+  </div>
+  <div class="rec-form">
+    <div class='rec-form-text'>
+      <label class="rec-form-text">場所</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.password_field :place, class:"input-default", id:"place", placeholder:"例)室内" %>
+  </div>
+  <div class="rec-form">
+    <div class='rec-form-text'>
+      <label class="rec-form-text">姿勢</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :posture, class:"input-default", id:"posture", placeholder:"例) 立位、座位、どちらでも可など", maxlength:"40" %>
+  </div>
+  <div class="rec-form">
+    <div class='rec-form-text'>
+      <label class="rec-form-text">職員人数</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :staff_number, class:"input-default", id:"staff_number", placeholder:"例)3名", maxlength:"40" %>
+  </div>
+  <div class="rec-form">
+    <div class='rec-form-text'>
+      <label class="rec-form-text">ご利用者様人数</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :care_number, class:"input-default", id:"care_number", placeholder:"例)5名", maxlength:"40" %>
+  </div>
+
+
+  <div class='register-btn'>
+    <%= f.submit "レクリエーション新規登録" ,class:"register-red-btn" %>
+  </div>
+</div> 
+<% end %>
+
