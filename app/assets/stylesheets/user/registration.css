@@ -46,13 +46,15 @@
 }
 
 .form-text {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   background-color: #f9eb71;
 }
 
 .indispensable{
   background-color: rgb(249, 178, 178);
+  font-size: 20px;
+  
 }
 
 .input-default{

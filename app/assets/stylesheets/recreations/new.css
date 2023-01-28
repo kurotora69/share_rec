@@ -1,0 +1,22 @@
+.recreation-post{
+  height: 100%;
+  background-color: #76f53773;
+}
+
+.form-group{
+  height: 100%;
+  background-color: #fcfcf873;
+}
+
+
+.rec-form{
+  text-align: center;
+}
+
+.rec-form-text{
+  height: 30px;
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
