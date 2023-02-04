@@ -1,3 +1,41 @@
+.user-login {
+  width: 75%;
+  background-color: white;
+  padding-bottom: 70px;
+  border: 20px solid #f9eb71;
+}
+
+
+.login {
+  text-align: center;
+}
+
+.user-confirm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.login-text {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f9eb71;
+}
+
+.indispensable{
+  background-color: rgb(249, 178, 178);
+  font-size: 20px;
+}
+
+.input-confirm{
+  margin-top: 20px;
+  height: 40px;
+  width: 50%;
+  
+}
+
 
 .login-btn {
   width: 50%;
@@ -7,10 +45,10 @@
 
 .login-red-btn {
   width: 100%;
-  background: #f9eb71;
-  border: 1px solid #f9eb71;
+  background: rgb(249, 178, 178);
   color: rgb(1, 1, 1);
   line-height: 48px;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 10px;
 }

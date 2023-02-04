@@ -14,63 +14,63 @@
         <label class="rec-form-text">レクリエーションのジャンル</label>
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :genre_tag, class:"input-default", id:"nickname", placeholder:"例) 運動", maxlength:"40" %>
+      <%= f.text_area :genre_tag, class:"input-form", id:"nickname", placeholder:"例) 運動", maxlength:"40" %>
     </div>
     <div class="rec-form">
       <div class='rec-form-text'>
         <label class="rec-form-text">レクリエーションタイトル</label>
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :title, class:"input-default", id:"title", placeholder:"例)風船バレー", maxlength:"40" %>
+      <%= f.text_area :title, class:"input-form", id:"title", placeholder:"例)風船バレー", maxlength:"40" %>
     </div>
     <div class="rec-form">
       <div class='rec-form-text'>
         <label class="rec-form-text">レクリエーション説明</label>
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :explanation, class:"input-default", id:"explanation", placeholder:"例)椅子に座った状態で、手を使い風船をトスしあうゲーム、※注意点、アレンジなどもあればご記入をお願いします", autofocus: true %>
+      <%= f.text_area :explanation, class:"input-form", id:"explanation", placeholder:"例)椅子に座った状態で、手を使い風船をトスしあうゲーム、※注意点、アレンジなどもあればご記入をお願いします", autofocus: true %>
     </div>
     <div class="rec-form">
       <div class='rec-form-text'>
         <label class="rec-form-text">準備物(道具・材料など)</label>
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :posture, class:"input-default", id:"posture", placeholder:"例)風船" %>
+      <%= f.text_area :posture, class:"input-form", id:"posture", placeholder:"例)風船" %>
     </div>
     <div class="rec-form">
       <div class='rec-form-text'>
         <label class="rec-form-text">場所</label>
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :place, class:"input-default", id:"place", placeholder:"例)室内" %>
+      <%= f.text_area :place, class:"input-form", id:"place", placeholder:"例)室内" %>
     </div>
     <div class="rec-form">
       <div class='rec-form-text'>
         <label class="rec-form-text">姿勢</label>
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :posture, class:"input-default", id:"posture", placeholder:"例) 立位、座位、どちらでも可など", maxlength:"40" %>
+      <%= f.text_area :posture, class:"input-form", id:"posture", placeholder:"例) 立位、座位、どちらでも可など", maxlength:"40" %>
     </div>
     <div class="rec-form">
       <div class='rec-form-text'>
         <label class="rec-form-text">職員人数</label>
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :staff_number, class:"input-default", id:"staff_number", placeholder:"例)3名", maxlength:"40" %>
+      <%= f.text_area :staff_number, class:"input-form", id:"staff_number", placeholder:"例)3名", maxlength:"40" %>
     </div>
     <div class="rec-form">
       <div class='rec-form-text'>
         <label class="rec-form-text">ご利用者様人数</label>
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :care_number, class:"input-default", id:"care_number", placeholder:"例)5名", maxlength:"40" %>
+      <%= f.text_area :care_number, class:"input-form", id:"care_number", placeholder:"例)5名", maxlength:"40" %>
     </div>
   </div>
 
-  <div class='register-btn'>
-    <%= f.submit "レクリエーション新規登録" ,class:"register-red-btn" %>
+  <div class='new-rec-btn'>
+    <%= f.submit "新規投稿" ,class:"new-red-btn" %>
   </div>
-  
+
 </div> 
 
 <% end %>
