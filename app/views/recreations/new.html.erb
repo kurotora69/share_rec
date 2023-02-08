@@ -65,6 +65,17 @@
       </div>
       <%= f.text_area :care_number, class:"input-form", id:"care_number", placeholder:"例)5名", maxlength:"40" %>
     </div>
+    <div class="img-upload">
+      <div class="rec-form-text">
+        レクリエーション画像
+      </div>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"rec-image" %>
+      </div>
+    </div>
   </div>
 
   <div class='new-rec-btn'>

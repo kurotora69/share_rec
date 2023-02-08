@@ -26,6 +26,13 @@
   min-width: 500px;
 }
 
+
+.img-upload{
+  text-align: center;
+  padding-top: 20px;
+}
+
+
 .new-rec-btn {
   width: 50%;
   margin: 0 auto;
