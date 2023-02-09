@@ -1,6 +1,7 @@
 class RecreationsController < ApplicationController
 
   def index
+    @recreations = Recreation.all.order('created_at DESC')
   end
 
   def new
