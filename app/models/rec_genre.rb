@@ -1,2 +1,0 @@
-class RecGenre < ApplicationRecord
-end
