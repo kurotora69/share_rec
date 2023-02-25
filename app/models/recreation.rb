@@ -1,6 +1,7 @@
 class Recreation < ApplicationRecord
   has_one_attached :image
   belongs_to :user
+  has_many :genre_tags , through: :rec_genres
 
   with_options presence: true do
     validates :title
